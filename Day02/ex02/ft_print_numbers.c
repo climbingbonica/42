@@ -7,7 +7,7 @@ void    ft_putchar(int d)
 
 void    ft_putchar(int d);
 
-void    ft_print_numbers (void)
+void    ft_print_numbers(void)
 {
         int a;
 
