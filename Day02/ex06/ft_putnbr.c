@@ -9,22 +9,25 @@ void    ft_putchar(char c);
 
 void    ft_putnbr(int nb)
 {
-	if (nb < 0)
+	long int lnb;
+
+	lnb = nb;
+	if (lnb < 0)
 	{
 		ft_putchar('-');
-		nb = nb * -1;
+		lnb = lnb * -1;
 	}
-        if (nb >= 10)
+        if (lnb >= 10)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		ft_putnbr(lnb / 10);
+		ft_putnbr(lnb % 10);
 	}
 	else	
-		ft_putchar(nb + '0');
+		ft_putchar(lnb + '0');
 }
 /*
 int     main(void)
 {
-        ft_putnbr(-4211111);
+        ft_putnbr(-2147483648);
         return(0);
 }*/
